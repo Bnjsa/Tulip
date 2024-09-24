@@ -1,0 +1,239 @@
+/* Bootstrap CSS extract */
+
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: #000000;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#titulos{
+  align-content: center;
+}
+
+@media (min-width: 576px) {
+.container {
+  max-width: 540px;
+}
+}
+
+@media (min-width: 768px) {
+.container {
+  max-width: 720px;
+}
+}
+
+@media (min-width: 992px) {
+.container {
+  max-width: 960px;
+}
+}
+
+@media (min-width: 1200px) {
+.container {
+  max-width: 1140px;
+}
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+margin-right: -15px;
+margin-left: -15px;
+}
+
+.col {
+position: relative;
+width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+.col {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+}
+
+h1, h6 {
+margin-top: 0;
+margin-bottom: 0.5rem;
+font-weight: 500;
+line-height: 1.2;
+color: #ffffff;
+}
+
+h1 {
+font-size: 2.5rem;
+}
+
+h6 {
+font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+img {
+vertical-align: middle;
+align-items: center;
+border-style: none;
+border-radius: 20px;
+align-self: center;
+}
+
+#center{
+  align-items: center;
+  align-self: center;
+  display: block; /* Asegura que la imagen se comporte como un bloque */
+  margin-left: auto; /* Establece el margen izquierdo automático */
+  margin-right: auto; /* Establece el margen derecho automático */
+}
+
+#bred {
+  background-color:#cc0000; /* Rojo oscuro al pasar el cursor */
+  color: #ffffff; /* Texto blanco */
+  border: none;
+  border-radius: 20px; /* Bordes redondos */
+  text-align: center;
+  transition: background-color 0.3s; /* Transición suave */
+  width: 120px;
+  height: 25px;
+}
+
+#bred:hover {
+  background-color: #cc0000; /* Rojo oscuro al pasar el cursor */
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
+.row-cols-auto > * {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.row-cols-1 > * {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.row-cols-2 > * {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.row-cols-3 > * {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+.row-cols-4 > * {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.row-cols-5 > * {
+  flex: 0 0 auto;
+  width: 20%;
+}
+
+.row-cols-6 > * {
+  flex: 0 0 auto;
+  width: 16.66666667%;
+}
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.col-1 {
+  flex: 0 0 auto;
+  width: 8.33333333%;
+}
+
+.col-2 {
+  flex: 0 0 auto;
+  width: 16.66666667%;
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+.col-5 {
+  flex: 0 0 auto;
+  width: 41.66666667%;
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 auto;
+  width: 58.33333333%;
+}
+
+.col-8 {
+  flex: 0 0 auto;
+  width: 66.66666667%;
+}
+
+.col-9 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 auto;
+  width: 83.33333333%;
+}
+
+.col-11 {
+  flex: 0 0 auto;
+  width: 91.66666667%;
+}
+
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}

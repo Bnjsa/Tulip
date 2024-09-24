@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Active movility</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/DRCSS.css'>
+</head>
+<body>
+
+<h1 id="titulos">Sistema Integral Financiero - SIF</h1>
+
+<script>
+    let valores = [];
+
+    function guardarValor(fila, columna) {
+        const valor = document.getElementById(`celda-${fila}-${columna}`).value;
+        valores[fila] = valores[fila] || [];
+        valores[fila][columna] = valor;
+        console.log(valores);
+    }
+</script>
+
+<!--Fecha-->
+<script>
+    var fechaActual = new Date();
+    var day = fechaActual.getDate();
+    var month = fechaActual.getMonth() + 1;
+    var year = fechaActual.getFullYear();
+    document.write("La fecha actual es: " + day + "/" + month + "/" + year);
+</script>
+
+</head>
+
+<table>
+    <tr>
+        <th>Days</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miercoles</th>
+    </tr>
+
+    <tr>
+        <td>Ingresos</td>
+        <td><input type="text" id="celda-0-0" oninput="guardarValor(0, 0)"></td>
+        <td><input type="text" id="celda-0-1" oninput="guardarValor(0, 1)"></td>
+        <td><input type="text" id="celda-0-2" oninput="guardarValor(0, 2)"></td>
+    </tr>
+    <tr>
+        <td>Egresos</td>
+        <td><input type="text" id="celda-1-0" oninput="guardarValor(1, 0)"></td>
+        <td><input type="text" id="celda-1-1" oninput="guardarValor(1, 1)"></td>
+        <td><input type="text" id="celda-1-2" oninput="guardarValor(1, 2)"></td>
+    </tr>
+</table>
+
+
+<!--PRUEBA DE GRÁFICOS-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<canvas id="myChart" width="20" height="20"></canvas>
+
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar', // Tipo de gráfico: 'bar', 'line', 'pie', etc.
+        data: {
+            labels: ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sábado'],
+            datasets: [{
+                label: 'Ventas',
+
+                data: [20, 10, 30, 18, 20, 2, 40, 22],
+
+
+                backgroundColor: [
+                    'rgba(169, 50, 38)',
+                    'rgba(27, 94, 32)',
+                    'rgba(169, 50, 38)',
+                    'rgba(27, 94, 32)',
+                    'rgba(169, 50, 38)',
+                    'rgba(27, 94, 32)',
+                    'rgba(169, 50, 38)',
+                    'rgba(27, 94, 32)',
+                    'rgba(169, 50, 38)',
+                    'rgba(27, 94, 32)',
+                    'rgba(169, 50, 38)',
+                    'rgba(27, 94, 32)',
+                    'rgba(169, 50, 38)',
+                    'rgba(27, 94, 32)',
+                ]
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+
+
+
+</body>
+</html>
