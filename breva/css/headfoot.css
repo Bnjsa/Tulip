@@ -1,7 +1,11 @@
-
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 100px; /* Ajusta este valor según la altura de tu header */
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .header {
@@ -37,4 +41,36 @@ body {
   text-decoration: none;
   color: black;
   font-weight: bold;
+}
+
+.footer {
+  background-color: #333; /* Fondo oscuro */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer .icons {
+  margin-bottom: 10px;
+}
+
+.footer .icons i {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.footer .links {
+  margin-top: 10px;
+}
+
+.footer .links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer .links a:hover {
+  text-decoration: underline;
 }
