@@ -3,9 +3,29 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Base</title>
+    <title>Saabe</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='Saabe/CSS/DRCSS.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS/DRCSS.css'>
+
+
+    <script> 
+    <!--Paginas izzi -->
+    function openRoaming() { window.open("https://izzihelpcenter.zendesk.com/hc/es-419/articles/4404991591066-Roaming-Internacional-Informaci%C3%B3n-contenida-en-AC-567-V2", "popup", "width=1000,height=600"); } 
+    function openOfertaComercial() { window.open("https://izzihelpcenter.zendesk.com/hc/es-419/articles/4404991591066-Roaming-Internacional-Informaci%C3%B3n-contenida-en-AC-567-V2", "popup", "width=1000,height=600"); } 
+    <!--Herramientas izzi -->
+    function openSiebel() { window.open("https://crm.izzi.mx/siebel/app/ecommunications/esn?SWECmd=Start", "popup", "width=1000,height=600"); } 
+    function openIntranet() { window.open("https://tvtasintranet/INTRANET/index.php", "popup", "width=1000,height=600"); } 
+    function openGisData() { window.open("https://gdv-p.sunvizion.izzi.mx/GDV", "popup", "width=1000,height=600"); } 
+    <!--Herramientas empleado -->
+    function openCheca() { window.open("https://cxworkhub.izzi.mx/login", "popup", "width=1000,height=600"); } 
+    function openNomina() { window.open("https://televisa.izziapiweb.mx/recibosizzi/", "popup", "width=1000,height=600"); } 
+    <!--Herramientas empleado -->
+    function openSirt() { window.open("https://izzitelco-my.sharepoint.com/:x:/r/personal/bsalazara_izzi_mx/_layouts/15/Doc.aspx?sourcedoc=%7BE78EC641-AC67-404C-A218-836F24C9A7AD%7D&file=Registros%20televentas%202.xlsx&action=default&mobileredirect=true", "popup", "width=1000,height=600"); } 
+    function openSift() { window.open("https://izzitelco-my.sharepoint.com/:x:/r/personal/bsalazara_izzi_mx/_layouts/15/Doc.aspx?sourcedoc=%7BC964D42F-2B32-4A5D-9015-C0062CA8672E%7D&file=Sistema%20Integral%20Financiero%20Tulipan%20-%20SIFT.xlsx&action=default&mobileredirect=true", "popup", "width=1000,height=600"); } 
+
+    </script>
+
+
 </head>
 <body>
 <div class="container">
@@ -14,7 +34,7 @@
             <table>
             <tr>
                 <br><br>
-                <img id="center" src="Saabe/IMG/dogs.jpg" width="350" height="350">
+                <img id="center" src="../IMG/imgIII.jpg" width="350" height="350">
             </tr>
         </table>
             
@@ -26,19 +46,25 @@
             </h1>
             <p>v1</p>
             <table>
-        
                 <tr>
-                    
-                    <td><button id="bred" class="btn btn-primary" onclick="window.location.href='https://izzitelco-my.sharepoint.com/:x:/r/personal/bsalazara_izzi_mx/_layouts/15/Doc.aspx?sourcedoc=%7BE78EC641-AC67-404C-A218-836F24C9A7AD%7D&file=Registros%20televentas%202.xlsx&action=default&mobileredirect=true'">sirt</button></td>
-                    <td>  </td>
-                    <td><button id="bred" class="btn btn-primary" onclick="window.location.href='https://izzitelco-my.sharepoint.com/:x:/r/personal/bsalazara_izzi_mx/_layouts/15/Doc.aspx?sourcedoc=%7BC964D42F-2B32-4A5D-9015-C0062CA8672E%7D&file=Sistema%20Integral%20Financiero%20Tulipan%20-%20SIFT.xlsx&action=default&mobileredirect=true'">sift</button></td>
-
+                    <td><button onclick="openRoaming()">Roaming Int</button></td>
+                    <td><button onclick="openOfertaComercial()">Oferta Comercial</button></td>
                 </tr>
-
                 <tr>
-                    <td>  </td>
-                    <td><button id="bred" class="btn btn-primary" onclick="window.location.href='Saabe/HTML/Helpmat.html'">Material de apoyo</button></td>
-                    <td>  </td>
+                    <td><button onclick="openSiebel()">Siebel</button></td>
+                    <td><button onclick="openIntranet()">Intranet</button></td>
+                    <td><button onclick="openGisData()">Gis Data</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="openCheca()">Checa</button></td>
+                    <td><button onclick="openNomina()">Nómina</button></td>
+                </tr>
+                <tr>
+                    <h6>Strategic Control Systems </h6>
+                </tr>
+                <tr>
+                    <td><button onclick="openSirt()">Sirt</button></td>
+                    <td><button onclick="openSift()">Sift</button></td>
                 </tr>
             </table>
 
