@@ -1,69 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Saabe</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='CSS/DRCSS.css'>
-
-
-    <script> 
-    <!--Herramientas empleado -->
-
-
-    function openSift() { window.open("https://izzitelco-my.sharepoint.com/:x:/r/personal/bsalazara_izzi_mx/_layouts/15/Doc.aspx?sourcedoc=%7BC964D42F-2B32-4A5D-9015-C0062CA8672E%7D&file=Sistema%20Integral%20Financiero%20Tulipan%20-%20SIFT.xlsx&action=default&mobileredirect=true", "popup", "width=1000,height=600"); } 
-
-    function openGitHub() { window.open("https://github.com/Bnjsa/Tulip", "popup", "width=1000,height=600"); } 
-    
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pronóstico del Clima</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    #weather-container {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin: 10px 0;
+    }
+    p {
+      font-size: 1.2em;
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <table>
-            <tr>
-                <br><br>
-                <img id="center" src="IMG/dogs.jpg" width="350" height="350">
-            </tr>
-        </table>
-            
-        </div>
+  <div id="weather-container">
+    <h2>Pronóstico del Clima</h2>
+    <p id="location">Cargando...</p>
+    <img id="weather-icon" src="" alt="Ícono del clima">
+    <p id="temperature">Cargando...</p>
+    <p id="description">Cargando...</p>
+  </div>
 
-        <div class="col">
-            <br><br>
-            <h1>Welcome back home
-            </h1>
-            <p>v5</p>
-            <table>
-                
-                <tr>
-                    <h6>Strategic Control Systems </h6>
-                </tr>
-                <tr>
-                    
-                    <td><button id="bred" onclick="openSift()">Sift</button></td>
-                </tr>
-
-                <tr>
-                    <td><button id="bred" onclick="openGitHub()">Support Git</button></td>
-                </tr>
-
-
-            </table>
-            <div id="weather-container">
-                <h2>Pronóstico del Clima</h2>
-                <p id="location">Cargando...</p>
-                <img id="weather-icon" src="" alt="Ícono del clima">
-                <p id="temperature">Cargando...</p>
-                <p id="description">Cargando...</p>
-              </div>
-              <script src="JS/app.js"></script>
-        </div>
-    </div>
-</div>
+  <script src="app.js"></script>
 </body>
 </html>
-
-
