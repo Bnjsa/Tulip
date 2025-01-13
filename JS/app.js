@@ -1,5 +1,5 @@
 const apiKey = 'XuulHBH5lBjUMELgVAg6O549WFG4Fraz'; // Asegúrate de reemplazar con tu propia API Key
-const city = 'Madrid'; // Aquí puedes cambiar la ciudad que deseas consultar
+const city = 'Tijuana'; // Aquí puedes cambiar la ciudad que deseas consultar
 
 // URL base para la búsqueda de ciudades
 const baseUrl = 'http://dataservice.accuweather.com';
