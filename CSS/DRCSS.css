@@ -1,5 +1,13 @@
 /* Bootstrap CSS extract */
 
+#weather-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
