@@ -1,0 +1,58 @@
+body {
+  background:#000000;
+  color: #ffffff; 
+}
+
+img {
+  vertical-align: middle;
+  align-items: center;
+  border-style: none;
+  border-radius: 20px;
+  align-self: center;
+  }
+  
+  #center{
+    align-items: center;
+    align-self: center;
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin-left: auto; /* Establece el margen izquierdo automático */
+    margin-right: auto; /* Establece el margen derecho automático */
+  }
+  
+  #bred {
+    background-color:#cc0000; /* Rojo oscuro al pasar el cursor */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 20px; /* Bordes redondos */
+    text-align: center;
+    transition: background-color 0.3s; /* Transición suave */
+    width: 120px;
+    height: 25px;
+  }
+  
+  #bred:hover {
+    background-color: #cc0000; /* Rojo oscuro al pasar el cursor */
+  }
+  
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+  }
+  
+  .row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+  }
+  
+  .col {
+    flex: 1 0 0%;
+  }
